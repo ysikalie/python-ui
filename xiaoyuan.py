@@ -40,15 +40,15 @@ def process(i):
     d.send_keys("%d.jpg" % i, True)
     time.sleep(2)
     d.click(0.297, 0.061)
-    time.sleep(2)
+    time.sleep(3)
     d.click(0.92, 0.2)
-    time.sleep(2)
+    time.sleep(3)
     d.click(0.688, 0.894)
-    time.sleep(2)
+    time.sleep(3)
     d.click(0.751, 0.888)
-    time.sleep(2)
+    time.sleep(3)
     d.click(0.266, 0.97)
-    time.sleep(2)
+    time.sleep(3)
     d.click(0.733, 0.526)
 
 
@@ -60,7 +60,7 @@ def process(i):
 
 
 def main():
-    for i in range(9, 0, -1):
+    for i in range(200, 0, -1):
         process(i)
 
 main()
