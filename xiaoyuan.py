@@ -17,8 +17,7 @@ def process(i):
     d.send_keys('%d.jpg' % i, True)
     time.sleep(0.5)
     d.click(0.724, 0.067)
-    time.sleep(0.5)
-    d.click(0.608, 0.202)
+
     time.sleep(0.5)
     d.click(0.608, 0.202)
     time.sleep(0.5)
@@ -28,6 +27,7 @@ def process(i):
     time.sleep(4)
 
     d.screenshot(r"C:\Users\TAL\Desktop\screenshot\%d.jpg" % i)
+
 
 
     #删除
@@ -60,7 +60,7 @@ def process(i):
 
 
 def main():
-    for i in range(200, 0, -1):
+    for i in range(40, 0, -1):
         process(i)
 
 main()
