@@ -26,7 +26,7 @@ def process(i):
 
     time.sleep(4)
 
-    d.screenshot(r"C:\Users\TAL\Desktop\screenshot\%d.jpg" % i)
+    d.screenshot(r"C:\Users\TAL\Desktop\screenshot\cut_%d.jpg" % i)
 
 
 
@@ -36,9 +36,9 @@ def process(i):
     d.click(0.733, 0.427)
     time.sleep(2)
     d.click(0.511, 0.063)
-    time.sleep(2)
+    time.sleep(4)
     d.send_keys("%d.jpg" % i, True)
-    time.sleep(2)
+    time.sleep(4)
     d.click(0.297, 0.061)
     time.sleep(3)
     d.click(0.92, 0.2)
@@ -60,7 +60,7 @@ def process(i):
 
 
 def main():
-    for i in range(40, 0, -1):
+    for i in range(279, 0, -1):
         process(i)
 
 main()
